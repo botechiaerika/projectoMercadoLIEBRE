@@ -18,6 +18,8 @@
   "homepage": "https://github.com/BotechiaErika/projectoMercadoLIEBRE#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "global": "^4.4.0",
+    "nodemon": "^2.0.15",
     "package.json": "^2.0.1"
   }
 }
