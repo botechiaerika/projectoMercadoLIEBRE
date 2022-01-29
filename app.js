@@ -1,17 +1,18 @@
-const express = require('express')
-cons app = express()
+const express = require('express');
+const app = express();
+app.use(express.static('/public'));
 
-app.listen(3030, () => {
-	console.log(‘scream en 3000 port can you listen’)})
-/*
-// command c frena web server
+app.listen(5000, () => {
+  console.log('Levante WS EXPRESS on 5000');
+});
 
-const. path = requiere(‘path’)
-// libreria path unifica rutas en distintos sistemas operativos para express llegar a estas con seguridad  
-// metodo resolve —> resolve ruta en todos dispositivos
-//dirname referencia a ubicacion en que encontro desde raiz hacia public
+let client = path('/__dirname');
+console.log(client);
+const pathPublic = path.join(client, './public');
+const resolve = path.join(pathPublic, './path');
 
+app.get('/home', (req, res) => {
+  res.sendFile(path.resolve('./views/home.html'));
+});
 
-const publicPath = path.join(__dirname, ‘./public’); 
-app.use( express.static(path.resolve(publicPath))
-
+app.use(express.static(pathPublic));
