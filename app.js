@@ -8,16 +8,16 @@ app.listen(3030, () => {
 })
 
 app.get('./home', (req, res) => {
-        let homeHTML = __dir +
-            './home'
-        res.send('./views/home.HTML')
-    }
+        let homeHTML = __dirname {
+            res.send('./views/home.HTML')
+        })
 }
-
-//Metodo sendFile
-/* - Envia ARCHIVOS a WS
-    RESPONDE A PETICION DE ESTRUCTURA ORGANIZADA Y COMPLEXA
-    ARGUMENTO CADENA DE TEXTO UBICACION AL NAVEGADOR
-PATH CON RUTAS ABSOLUTAS + COMODAS PARA EXPRESS
-    
-*/
+app.get('./*', (req, res) => {
+    app.use(path.express(path.join(__dirname, './public')))
+})
+const nodemon = require('nodemon')
+    //Metodo sendFile
+    /*Envia ARCHIVOS a WS
+     //   RESPONDE A PETICION DE ESTRUCTURA ORGANIZADA Y COMPLEXA
+      //  AUMENTO CADENA DE TEXTO UBICACION AL NAVEGADOR
+    // PATH CON RUTAS ABSOLUTAS + COMODAS PARA EXPRESS*/
