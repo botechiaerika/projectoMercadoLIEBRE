@@ -20,7 +20,6 @@
     "express": "^4.17.2",
     "global": "^4.4.0",
     "nodemon": "^2.0.15",
-    "package-lock": "^1.0.5",
     "package.json": "^2.0.1"
   }
 }
