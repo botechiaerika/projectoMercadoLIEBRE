@@ -1,13 +1,22 @@
 const express = require('express');
+const port = 3030
+console.log(__dirname)
 const app = express()
-const path = require('path')
-const resolve = path.express(__dirname
-        const resolve = path.resolve(__dirname + './public')
 
+const resolve = require ('resolve')
 
-        app.listen(3030, () => {
-            console.log('LISTEN WEB SERVER ON PORT 3030')
-        }) app.get('/', (req, res) => {
-            res.sendFile(path.resolve(__dirname, ''
-                views / home.html))
-        })
+const static =app.use(express.static('/public'))
+
+app.get('/', (req, res) => {
+	res.send('indez'
+
+    var express = require('express')
+var favicon = require('serve-favicon')
+var path = require('path')
+
+var app = express()
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
+// Add your routes here, etc.
+
+app.listen(3000)
