@@ -21,7 +21,7 @@
     "global": "^4.4.0",
     "http": "^0.0.1-security",
     "nodemon": "^2.0.15",
-    "package-lock": "^1.0.5",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "serve-favicon": "^2.5.0"
   }
 }

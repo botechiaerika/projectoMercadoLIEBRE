@@ -1,26 +1,25 @@
-const express = require('express')
+var path = require('path')
+var favicon = require('serve-favicon')
+const resolve = require ('resolve')
 
-const path = require('path')
 
-const port = 3065
-
-const app = express() 
-app.use(express.static(resolve(__dirname + '/public/')));
-
- app.listen(port , () => { console.log(`Listen WS NODE EXPRESS on port ${port} by eri`)
-})
-    app.get('/' , (req , res) =>{ res.send("Bien-Venid@s a mercado LIEBRE")
-    res.sendFile(__dirname + './views/index.html')
+app.use(resolve(favicon(path.join(__dirname, 'public', 'favicon.ico'))))
+    app.get('/' ,(req , res ) => {
+    res.sendFile(favicon + 'register.html')
     });
-app.get('/login', (req , res ) => {
-   res.sendFile(__dirname + './views/login.html')
+    pp.get('/login', (req , res ) => {
+   res.sendFile(favicon + 'login.html')
     });
 app.get('/registro' ,(req , res ) => {
-    res.sendFile(__dirname + './views/register.html')
+    res.sendFile(favicon + 'register.html')
     });
 app.get('/home', (req , res ) => {
-    res.sendFile('./public' + '/views/home.html')
+    res.sendFile(favicon + 'home.html')
     });
 app.get('/404' , (req, res) => {
- res.sendFile(__dirname + './views/error404.html')
+ res.sendFile(favicon + 'error404.html')
  })
+
+// Add your routes here, etc.
+app.listen(port , (req, res) => {
+    console.log("ws rodando P3030")})
