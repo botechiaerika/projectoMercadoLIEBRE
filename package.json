@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "global": "^4.4.0",
+    "http": "^0.0.1-security",
     "nodemon": "^2.0.15",
     "package.json": "^2.0.1",
     "serve-favicon": "^2.5.0"

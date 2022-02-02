@@ -1,30 +1,3 @@
-const express = require('express');
-const app = express()
-const path = require('path')
-<<<<<<< Updated upstream
-const resolve = path.express(__dirname
-        const resolve = path.resolve(__dirname + './public')
-
-
-        app.listen(3030, () => {
-            console.log('LISTEN WEB SERVER ON PORT 3030')
-        }) app.get('/', (req, res) => {
-            res.sendFile(path.resolve(__dirname, ''
-                views / home.html))
-        })
-=======
-
-const resolve = path.resolve(__dirname + './public')
-
-
-app.listen(3030, () => {
-    console.log('LISTEN WEB SERVER ON PORT 3030')
-}) app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, ''
-        views / home.html))
-})
->>>>>>> Stashed changes
-=======
 var path = require('path')
 var favicon = require('serve-favicon')
 const resolve = require ('resolve')
@@ -50,4 +23,3 @@ app.get('/404' , (req, res) => {
 // Add your routes here, etc.
 app.listen(port , (req, res) => {
     console.log("ws rodando P3030")})
->>>>>>> f0102c85b65cf6965f5a725e3450abe47c12094e
